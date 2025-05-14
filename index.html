@@ -1,114 +1,352 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Matheus Henrique</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Font Awesome para ícones -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <title>Portfólio - Matheus Silva</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="grafico.js"></script>
+  <script src="slider.js"></script>
+  <script src="certificados.js"></script>
+  <script src="projetos.js"></script>
 </head>
 <body>
-    <header>
-        <div class="interface">
-            <div class="logo">
-                <a href="#">
-                    <img src="images/logo2-removebg-preview.png" alt="Logo M">
-                </a>    
-            </div>
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
-                </ul>
-            </nav>
-            <div class="btn-contato"></div>
-                <a href="#">
-                    <button>Contato</button>
-                </a>
-            </div>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">sobre mim</a></li>
+        <li><a href="#">certificados</a></li>
+        <li><a href="#">experiência</a></li>
+        <li><a href="#">projetos</a></li>
+        <li><a href="#">currículo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h1>Prazer, Matheus Silva!</h1>
+    <img src="images\ChatGPT Image 12 de mai. de 2025, 12_17_14.png" alt="Avatar de Matheus" class="avatar">
+    <p class="descricao">
+      Olá, sou Matheus Silva, estudante de Sistemas de Informação com formação técnica em Manutenção e Suporte em Informática. Tenho experiência com tecnologias de missão crítica, como Websphere MQ, CICS, IMS e plataforma Z, além de atuar com automação, Python, Docker, SQL e soluções em nuvem como Azure e IBM Cloud.
+
+Tenho interesse especial em AIOps e inteligência artificial, com experiência prática em Watson Assistant, WatsonX e no uso de LLMs. Estou em constante evolução, buscando sempre aprender e contribuir com inovação e eficiência nos projetos em que atuo.
+    </p>
+  </section>
+
+  <section class="formacao">
+    <div class="linha"></div>
+    <div class="pontos">
+      <div class="ponto"></div>
+      <div class="ponto"></div>
+    </div>
+    <div class="formacoes">
+      <div>
+        <h4>Técnico em Manutenção e Suporte em Informática - 2021 à 2022<br><br><span>FIEB</span></h4>
+        <p>Formação técnica em Manutenção e Suporte em Informática com sólidos conhecimentos em infraestrutura de TI, troubleshooting hardware/software, redes de computadores e sistemas operacionais. Experiência prática em montagem e manutenção de computadores, configuração de redes e suporte técnico ao usuário final."</p>
+      </div>
+      <div>
+        <h4>Bacharel em Sistemas da Informação - 2022 à 2025<br><br><span>Faculdade Impacta</span></h4>
+        <p>Formação em Sistemas de Informação com ênfase em desenvolvimento de software, arquitetura de sistemas e gestão de TI. Domínio em programação, análise de dados, serviços cognitivos e integração de tecnologias emergentes, aplicados em projetos reais de transformação digital e soluções inteligentes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="experiencia">
+    <h2 class="section-title"><span class="gradient-text">Experiência</span></h2>
+  
+    <div class="card-exp left">
+      <h3>Recepcionista - GTO</h3>
+      <p>gendamentos, organização de documentos médicos, interface entre pacientes/equipe médica e recepção humanizada – desenvolvendo habilidades de comunicação, resolução de problemas e trabalho em equipe.</p>
+      <p>Julho 2020 - Novembro 2021</p>
+    </div>
+  
+    <div class="card-exp right">
+      <h3>Estagiário de Operações de TI - Banco Bradesco S.A</h3>
+      <p>Profissional com experiência em operação de serviços bancários críticos (PIX, Cartões de 
+Débito, BDNs) e resolução de erros sistêmicos. Atuações no desenvolvimento de sistemas e projetos 
+de IA com IBM Watson, com proficiência em Python, cloud computing, práticas SRE, mainframes 
+e operações de TI.</p>
+      <p>Março 2023 - Março 2025</p>
+    </div>
+  </section>
+
+ <section id="certificados" class="certificates-section">
+  <h2 class="section-title"><span class="gradient-text">Meus</span> Certificados</h2>
+
+  <div class="certificates-slider">
+    <!-- Botões de navegação -->
+    <button class="slider-nav prev" aria-label="Anterior">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <!-- Envoltório correto do slider -->
+    <div class="slider-wrapper">
+      <div class="slider-container">
+        <!-- Os slides serão inseridos aqui via JavaScript -->
+      </div>
+    </div>
+
+    <!-- Botão próximo -->
+    <button class="slider-nav next" aria-label="Próximo">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <!-- Indicadores de slide -->
+  <div class="slider-dots">
+    <!-- Os dots também serão inseridos via JavaScript -->
+  </div>
+</section>
+
+
+  <section id="tech-stacks" class="tech-stacks">
+  <div class="container">
+    <h2 class="section-title"><span class="gradient-text">Minha Stack</span> Tecnológica</h2>
+    <p class="section-subtitle">Tecnologias que transformam ideias em realidade</p>
+    
+    <div class="stacks-grid">
+      <!-- Frontend -->
+      <div class="tech-category" data-category="frontend">
+        <div class="category-header">
+          <div class="icon-wrapper">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Frontend</h3>
         </div>
-    </header>
-    <main>
-        <section class="topo-do-site">
-            <div class="interface">
-                <div class="flex">
-                    <div class="txt-topo-site">
-                        <h1>AIOps: Navegando pelo Meu Universo de Inteligência Artificial aplicada à operação de TI<span>.</span></h1>
-                        <p>Bem-vindo ao meu portfólio pessoal, um espaço onde compartilho minha jornada explorando o universo de AIOps e aplicando a Inteligência Artificial para transformar as operações de TI. Vamos navegar juntos neste universo fascinante! 🚀</p>
-                    <div class="btn-contato">
-                        <a href="#">
-                            <button>Entre em contato</button>
-                        </a>
-                    </div>
-                </div>
-                <div class="img-topo-site">
-                    <img src="images/foto3.jpg">
-                </div>
-                </div>
-            </div>
-        </section>
-        <section class="Especialidades">
-            <div class="interface">
-                <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
-                <div class="flex">
-                    <div class="Especialidades-box">
-                        <i class="bi bi-file-code-fill"></i>
-                        <h3>Desenvolvimento com Python</h3>
-                        <p>Python é uma linguagem de programação acessível e versátil, utilizada em diversas áreas como web, automação e inteligência artificial. Suas características favorecem o desenvolvimento rápido e eficiente, permitindo inovações em soluções web avançadas, machine learning e automação de processos.</p>
-                    </div>
-                    <div class="Especialidades-box">
-                        <i class="bi bi-cpu"></i>
-                        <h3>Operação/Infraestrutura de TI</h3>
-                        <p>Operação e infraestrutura de TI referem-se ao conjunto de atividades e recursos dedicados à gestão, manutenção e suporte dos sistemas de tecnologia da informação em uma organização. Isso envolve a administração de hardware, software, redes, servidores e outros componentes essenciais para garantir o funcionamento eficiente e seguro dos sistemas de informação.</p>
-                    </div>
-                    <div class="Especialidades-box">
-                        <i class="bi bi-robot"></i>
-                        <h3>Inteligência Artificial/Data Science</h3>
-                        <p>A Inteligência Artificial (IA) é crucial nas operações de TI, automatizando tarefas, antecipando problemas e melhorando a eficiência. Ela otimiza processos, detecta falhas e contribui para a segurança cibernética. A IA também é aplicada em chatbots, sistemas de recomendação e análise preditiva, proporcionando inovação e adaptação eficiente às demandas tecnológicas.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="sobre">
-            <div class="interface">
-                <div class="flex">
-                    <div class="img-sobre">
-                        <img src="images/foto3.jpg" alt="">
-                    </div>
-                    <div class="txt-sobre">
-                        <h2>MUITO PRAZER, <span>SOU MATHEUS HENRIQUE.</span></h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem non provident autem iste, vitae sed natus ipsa ullam ratione minus excepturi quae unde inventore dicta maiores eaque rerum sint nam.</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea reprehenderit corporis nesciunt perspiciatis, nostrum assumenda, maxime placeat molestiae esse suscipit laudantium, incidunt accusantium vero dolore temporibus sapiente? Temporibus, nesciunt quod!</p>
-                        <div class="btn-social">
-                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href="#"><button><i class="bi bi-github"></i></button></a>
-                            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="portfolio">
-            <div class="interface">
-                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
-                <div class="flex">
-                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
-                        <div class="overlay">Projeto 1</div>
-                    </div>
-                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
-                        <div class="overlay">Projeto 1</div>
-                    </div>
-                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
-                        <div class="overlay">Projeto 1</div>
-                    </div>
-                </div>
-            </div>
-        </section>       
-    </main>
+        <div class="tech-items">
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+            <span>HTML</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+            <span>CSS</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Backend -->
+      <div class="tech-category" data-category="backend">
+        <div class="category-header">
+          <div class="icon-wrapper">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3>Backend</h3>
+        </div>
+        <div class="tech-items">
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+            <span>Python</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" />
+            <span>Flask</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+            <span>C++</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Database -->
+      <div class="tech-category" data-category="database">
+        <div class="category-header">
+          <div class="icon-wrapper">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Banco de Dados</h3>
+        </div>
+        <div class="tech-items">
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/db2/db2-original.svg" alt="Db2" />
+            <span>Db2</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
+            <span>PostgreSQL</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://img.icons8.com/color/48/data-configuration.png" alt="Delta Lake" />
+            <span>Arquitetura Delta</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Infraestrutura -->
+      <div class="tech-category" data-category="infraestrutura">
+        <div class="category-header">
+          <div class="icon-wrapper">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <h3>Infraestrutura</h3>
+        </div>
+        <div class="tech-items">
+          <div class="tech-item">
+            <img src="https://img.icons8.com/color/48/ibm.png" alt="Mainframe" />
+            <span>Mainframe</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure" />
+            <span>Azure</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+            <span>Docker</span>
+          </div>
+          <div class="tech-item">
+            <img src="https://img.icons8.com/fluency/48/system-task.png" alt="SRE" />
+            <span>SRE</span>
+          </div>
+        </div>
+      </div>
+      <!-- Engenharia de Dados -->
+<div class="tech-category" data-category="engenharia-dados">
+  <div class="category-header">
+    <div class="icon-wrapper">
+      <i class="fas fa-database"></i>
+    </div>
+    <h3>Engenharia de Dados</h3>
+  </div>
+  <div class="tech-items">
+    <div class="tech-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apacheairflow/apacheairflow-original.svg" alt="Airflow" />
+      <span>Airflow</span>
+    </div>
+    <div class="tech-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="PySpark" />
+      <span>PySpark</span>
+    </div>
+    <div class="tech-item">
+      <img src="https://static-00.iconduck.com/assets.00/databricks-icon-2048x2048-fii1xq0j.png" alt="Databricks" />
+      <span>Databricks</span>
+    </div>
+    <div class="tech-item">
+      <img src="https://avatars.githubusercontent.com/u/695951?s=200&v=4" alt="MinIO" />
+      <span>MinIO</span>
+    </div>
+    <div class="tech-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" alt="Kafka" />
+      <span>Kafka</span>
+    </div>
+  </div>
+</div>
+<!-- Inteligência Artificial -->
+<div class="tech-category" data-category="ia">
+  <div class="category-header">
+    <div class="icon-wrapper">
+      <i class="fas fa-robot"></i>
+    </div>
+    <h3>Inteligência Artificial</h3>
+  </div>
+  <div class="tech-items">
+    <div class="tech-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn" />
+      <span>Scikit-learn</span>
+    </div>
+    <div class="tech-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" />
+      <span>PyTorch</span>
+    </div>
+    <div class="tech-item">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg" alt="Keras" />
+      <span>Keras</span>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+  
+  <section id="data-science" class="data-section">
+    <div class="container">
+      <h2 class="section-title"><span class="gradient-text">Expertise em Dados</span></h2>
+      <p class="section-subtitle">Transformando dados brutos em insights acionáveis</p>
+      <div class="data-visualization">
+        <canvas id="skillsChart"></canvas>
+      </div>
+        
+      </div>
+    </div>
+
+  </section>
+
+ <section id="featured-projects" class="projects-section">
+  <div class="container">
+    <h2 class="section-title"><span class="gradient-text">Projetos</span> que Impactaram</h2>
+    <p class="section-subtitle">Soluções reais com resultados mensuráveis</p>
+    
+    <div class="projects-grid">
+    </div>
+    
+    <div class="view-more-container">
+      <a href="/projetos" class="view-more-btn">Ver mais projetos</a>
+    </div>
+  </div>
+</section>
+<section id="highlights" class="highlights-section">
+  <div class="container">
+    <h2 class="section-title"><span class="gradient-text">Destaques</span> e Participações</h2>
+    <p class="section-subtitle">Eventos, conquistas e momentos marcantes</p>
+    
+    <div class="highlights-grid">
+      <!-- Destaque 1 -->
+      <div class="highlight-card">
+        <div class="highlight-image">
+          <img src="images\visitaIBM.jpg" alt="Palestra sobre IA">
+          <div class="highlight-badge">Momentos Marcantes</div>
+        </div>
+        <div class="highlight-content">
+          <h3>Co-criação junto a IBM</h3>
+          <p>Colaboração em sessões de design UX e discussões enriquecedoras com a equipe de Client Engineering da IBM, visando identificar as soluções mais inovadoras de IA e WatsonX, aplicadas ao ambiente Mainframe.</p>
+          <div class="highlight-date">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Outubro 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+
+  <footer>
+    <h1 class="section-title"><span class="gradient-text">Contato</span></h1>
+    <br>
+    <p class="subtitulo">Vamos trabalhar juntos? Me mande uma mensagem!</p>
+    
+    <div class="contato">
+      <div class="item">
+        <i class="bi bi-envelope"></i>
+        <a href="mailto:mth123922@gmail.com">mth123922@gmail.com</a>
+      </div>
+      <div class="item">
+        <i class="bi bi-linkedin"></i>
+        <a href="https://www.linkedin.com/in/matheus-henrique-ssilva/" target="_blank">
+          linkedin.com/in/matheus-henrique-ssilva
+        </a>
+      </div>
+      <div class="item">
+        <i class="bi bi-instagram"></i>
+        <a href="https://www.instagram.com/m_henriquesilvz" target="_blank">@m_henriquesilvz</a>
+      </div>
+      <div class="item">
+        <i class="bi bi-github"></i>
+        <a href="https://github.com/MatheusHenryque" target="_blank">MatheusHenryque</a>
+      </div>
+    </div>
+  </footer>
+  
 </body>
 </html>
