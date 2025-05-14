@@ -22,8 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
         'rgba(187, 134, 252, 1)',
         'rgba(55, 0, 179, 1)',
         'rgba(100, 100, 255, 1)',
-        'rgba(200, 50, 150, 1)',
-        'rgba(150, 150, 255, 1)'
+        'rgba(148, 100, 199, 0.7)',
+        'rgba(150, 150, 255, 1)',
+        'rgba(125, 177, 210, 0.7)',
       ],
       borderWidth: 1
     }]

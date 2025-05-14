@@ -440,55 +440,96 @@ nav .menu a:hover {
   transform: scale(1.2);
 }
 
+/* Seção de Certificados - Versão Mobile */
 @media (max-width: 768px) {
-.certificates-slider {
-  padding: 0 1rem;
-}
-
-.slider-nav {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
- right: 0;
-}
-
-.cert-card {
- height: auto;
- width: 40%;
-text-align: center;
-}
-}
-
-.data-visualization {
-  width: 100%;
-  background: transparent;
-  padding: 2rem;
-  position: relative;
-}
-
-.chart-container {
-  position: relative;
-  width: 100%;
-  min-height: 300px; /* Altura mínima para mobile */
-}
-
-@media (max-width: 768px) {
-  .data-visualization {
-    padding: 1rem 0.5rem;
+  .certificates-section {
+    padding: 2rem 1rem;
   }
   
-  .chart-container {
-    min-height: 250px;
+  .certificates-slider {
+    width: 100%;
+    padding: 0;
+    margin: 1.5rem auto;
+  }
+  
+  .slider-wrapper {
+    width: calc(100% - 80px); /* Espaço para os botões */
     margin: 0 auto;
+  }
+  
+  .slider-container {
+    width: 100%;
+  }
+  
+  .cert-slide {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .cert-card {
+    width: 100% !important; /* Força ocupar toda a largura disponível */
+    height: auto;
+    min-height: 300px;
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+  
+  .cert-logo {
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  .cert-logo img {
+    max-width: 150px;
+  }
+  
+  .cert-card h3 {
+    font-size: 1.3rem;
+  }
+  
+  .slider-nav {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .prev {
+    left: 5px;
+  }
+  
+  .next {
+    right: 5px;
+  }
+  
+  .slider-dots {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Ajustes extras para telas muito pequenas */
+@media (max-width: 480px) {
+  .certificates-slider {
+    margin: 1rem auto;
+  }
+  
+  .slider-wrapper {
+    width: calc(100% - 60px);
+  }
+  
+  .cert-card {
+    padding: 1.2rem;
+    min-height: 280px;
+  }
+  
+  .cert-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .cert-card p {
+    font-size: 0.9rem;
   }
 }
 /* Estilos Base */
