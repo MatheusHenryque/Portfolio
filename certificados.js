@@ -4,7 +4,7 @@ const certificados = [
       descricao: "Uso de IA na nuvem, visão computacional e modelos no Azure.",
       imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png",
       data: "Concluído: Mar 2023",
-      link: "#"
+      link: "https://www.credly.com/badges/06925242-5abe-4641-b21a-b31f23c362c2/linked_in_profile"
     },
     {
       titulo: "Azure Fundamentals",
@@ -18,7 +18,7 @@ const certificados = [
       descricao: "O curso ensina a criar e implementar chatbots inteligentes usando IA da IBM, abrangendo design de diálogos, integrações e análise de interações.",
       imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/800px-IBM_logo.svg.png",
       data: "Concluído: Ago 2024",
-      link: "#"
+      link: "https://www.credly.com/badges/55727da4-b573-41a6-a6eb-20de881dc122/public_url"
     },
     {
       titulo: "Gen IA - Awari",
@@ -39,7 +39,7 @@ const certificados = [
       descricao: "Certificação IBM sobre sistemas Mainframe e operações com z/OS.",
       imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/800px-IBM_logo.svg.png",
       data: "Concluído: Jan 2023",
-      link: "#"
+      link: "https://www.credly.com/badges/37c3679d-1d7a-465b-96a4-7cad7309fb14"
     },
     {
       titulo: "Introduction to IBM z/OS",
@@ -53,7 +53,7 @@ const certificados = [
       descricao: "O curso IT Essentials da Cisco oferece fundamentos em hardware, software, redes e segurança, preparando para certificações como CompTIA A+ e suporte técnico em TI.",
       imagem: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1200px-Cisco_logo_blue_2016.svg.png",
       data: "Concluído: Ago 2022",
-      link: "#"
+      link: "https://www.credly.com/badges/4dbf62e6-7bb2-4cd8-adeb-0d8c3037eafb/linked_in_profile"
     },
   ];
 
