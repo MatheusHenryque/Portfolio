@@ -26,15 +26,22 @@
         <li><a href="#">currículo</a></li>
       </ul>
     </nav>
+    <nav class="menu-mobile">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Nossos serviços</a></li>
+                <li><a href="#">Cases de sucesso</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="/login" class="btn-contato-mobile">Entre em contato</a></li>
+            </ul>
+        </nav>
   </header>
 
   <section class="intro">
     <h1>Prazer, Matheus Silva!</h1>
     <img src="images\ChatGPT Image 12 de mai. de 2025, 12_17_14.png" alt="Avatar de Matheus" class="avatar">
     <p class="descricao">
-      Olá, sou Matheus Silva, estudante de Sistemas de Informação com formação técnica em Manutenção e Suporte em Informática. Tenho experiência com tecnologias de missão crítica, como Websphere MQ, CICS, IMS e plataforma Z, além de atuar com automação, Python, Docker, SQL e soluções em nuvem como Azure e IBM Cloud.
-
-Tenho interesse especial em AIOps e inteligência artificial, com experiência prática em Watson Assistant, WatsonX e no uso de LLMs. Estou em constante evolução, buscando sempre aprender e contribuir com inovação e eficiência nos projetos em que atuo.
+      Olá, sou Matheus Silva, estudante de Sistemas de Informação com formação técnica em Manutenção e Suporte. Atuo com tecnologias críticas como Websphere MQ, CICS, IMS e Z/OS, além de ter experiência com Python, Docker, SQL, Azure e IBM Cloud. Tenho interesse em AIOps e IA, com vivência prática em Watson Assistant, WatsonX e LLMs. Busco sempre evoluir e contribuir com inovação e eficiência.
     </p>
   </section>
 
@@ -347,6 +354,13 @@ e operações de TI.</p>
       </div>
     </div>
   </footer>
+
+  <script>
+        document.querySelector('.btn-menu-mobile').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.menu-mobile').classList.toggle('active');
+        });
+    </script>
   
 </body>
 </html>
