@@ -25,16 +25,14 @@
         <li><a href="#">projetos</a></li>
         <li><a href="#">currículo</a></li>
       </ul>
+
+      <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
     </nav>
-    <nav class="menu-mobile">
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Nossos serviços</a></li>
-                <li><a href="#">Cases de sucesso</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="/login" class="btn-contato-mobile">Entre em contato</a></li>
-            </ul>
-        </nav>
+
   </header>
 
   <section class="intro">
@@ -356,10 +354,15 @@ e operações de TI.</p>
   </footer>
 
   <script>
-        document.querySelector('.btn-menu-mobile').addEventListener('click', function() {
-            this.classList.toggle('active');
-            document.querySelector('.menu-mobile').classList.toggle('active');
-        });
+      document.addEventListener('DOMContentLoaded', function() {
+      const hamburger = document.querySelector('.hamburger');
+      const menu = document.querySelector('.menu');
+      
+      hamburger.addEventListener('click', function() {
+          menu.classList.toggle('active');
+          hamburger.classList.toggle('active');
+      });
+  });
     </script>
   
 </body>
