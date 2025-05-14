@@ -618,17 +618,67 @@ canvas {
 }
 
 /* Efeitos Responsivos */
+/* Ajustes específicos para mobile - mantendo o desktop intacto */
 @media (max-width: 768px) {
+  .tech-stacks {
+    padding: 3rem 1rem;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
   .section-heading {
     font-size: 2.2rem;
+    line-height: 1.2;
+  }
+  
+  .section-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    padding: 0;
   }
   
   .stacks-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .tech-category {
+    padding: 1.5rem;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .category-header {
+    margin-bottom: 1.5rem;
   }
   
   .tech-items {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .tech-item {
+    padding: 0.8rem;
+    margin: 0;
+  }
+}
+
+/* Ajustes extras para telas muito pequenas (opcional) */
+@media (max-width: 480px) {
+  .section-heading {
+    font-size: 1.8rem;
+  }
+  
+  .tech-items {
+    grid-template-columns: 1fr;
+  }
+  
+  .tech-item {
+    padding: 0.8rem 1rem;
   }
 }
 
