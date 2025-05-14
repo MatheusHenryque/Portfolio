@@ -475,9 +475,38 @@ text-align: center;
   position: relative;
 }
 
-canvas {
-  width: 100% !important;
-  height: 100% !important;
+/* Ajustes específicos para mobile */
+@media (max-width: 768px) {
+  .data-visualization {
+    height: auto; /* Altura flexível */
+    min-height: 50vh; /* Altura mínima garantida */
+    padding: 1rem 0.5rem; /* Padding reduzido */
+  }
+
+  canvas {
+    max-height: 60vh !important; /* Limita a altura máxima */
+    width: 100% !important;
+    padding: 0 0.5rem; /* Espaço para evitar cortes */
+  }
+
+  /* Melhorias para gráficos específicos */
+  .chart-container {
+    position: relative;
+    margin: 0 auto;
+    width: 95% !important;
+  }
+}
+
+/* Ajustes extras para telas muito pequenas */
+@media (max-width: 480px) {
+  .data-visualization {
+    min-height: 40vh; /* Altura ainda menor para mobile pequeno */
+    padding: 1rem 0.2rem;
+  }
+
+  canvas {
+    max-height: 50vh !important;
+  }
 }
 /* Estilos Base */
 .tech-stacks {
