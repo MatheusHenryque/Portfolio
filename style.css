@@ -146,37 +146,84 @@ nav .menu a:hover {
   box-shadow: 0 0 10px rgba(187, 134, 252, 0.5);
 }
 
+/* Estilo Geral */
 .formacoes {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 16rem;
   margin-top: 3rem;
-  gap: 2rem;
 }
 
-.formacoes div {
-  width: 280px;
-  padding: 1.5rem;
-  background-color: #252525;
-  border-radius: 15px;
-  transition: transform 0.3s ease;
+.formacao-card {
+  width: 300px;
+  padding: 1.8rem;
+  background: linear-gradient(145deg, #252525, #1e1e1e);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #333;
 }
 
-.formacoes div:hover {
-  transform: translateY(-5px);
-  background-color: #2e2e2e;
+.formacao-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(187, 134, 252, 0.2);
+  border-color: #bb86fc;
 }
 
-.formacoes h4 {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 0.8rem;
+/* Cabeçalho */
+.formacao-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.formacao-header i {
+  font-size: 1.8rem;
   color: #bb86fc;
 }
 
-.formacoes p {
-  font-size: 0.85rem;
+.formacao-header h4 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #f0f0f0;
+  line-height: 1.4;
+}
+
+.instituicao {
+  display: block;
+  font-weight: normal;
+  color: #bb86fc;
+  font-size: 0.9rem;
+}
+
+.periodo {
+  display: block;
+  font-size: 0.8rem;
   color: #b0b0b0;
+}
+
+/* Lista de Habilidades */
+.habilidades-lista {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.habilidades-lista li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  color: #d0d0d0;
+}
+
+.habilidades-lista li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #bb86fc;
 }
 
 .experiencia {
@@ -1164,6 +1211,22 @@ footer .subtitulo {
 .highlight-date i {
   margin-right: 8px;
   color: var(--primary-color);
+}
+
+#pdf-viewer {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#fechar-pdf {
+  transition: background 0.3s;
+}
+
+#fechar-pdf:hover {
+  background: #3700b3 !important;
+  color: white !important;
 }
 
 

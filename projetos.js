@@ -5,7 +5,7 @@ const projects = [
     description: "Sistema de passagem de serviço projetado para integração com LLM",
     image: "images/ChatGPT Image 12 de mai. de 2025, 15_34_04.png",
     badge: "Desenvolvimento",
-    tags: ["Python", "Scikit-learn", "XGBoost"],
+    tags: ["Flask", "HTML", "CSS", "JavaScript", "WatsonX"],
     link: "#"
   },
   {
