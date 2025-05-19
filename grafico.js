@@ -1,10 +1,6 @@
-// Primeiro, inclua a biblioteca Chart.js no seu HTML:
-// <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 document.addEventListener('DOMContentLoaded', function() {
   const ctx = document.getElementById('barChart').getContext('2d');
   
-  // Dados de exemplo - substitua com seus próprios dados
   const data = {
     labels: ['Python', 'SQL', 'ETL', 'DataViz', 'Machine Learning', "Engenharia de Dados"],
     datasets: [{
@@ -30,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }]
   };
 
-  // Configurações responsivas
   const config = {
     type: 'bar',
     data: data,
