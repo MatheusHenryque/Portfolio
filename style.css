@@ -646,6 +646,13 @@ nav .menu a:hover {
   gap: 1.5rem;
 }
 
+.chart-container {
+  height: 300px; /* Altura fixa */
+  min-height: 300px; /* Ou altura mínima */
+  width: 100%;
+  margin: 0 auto;
+}
+
 .tech-item {
   display: flex;
   align-items: center;
