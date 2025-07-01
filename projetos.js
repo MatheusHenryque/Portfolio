@@ -26,6 +26,15 @@ const projects = [
     tags: ["Flask", "HTML", "CSS", "JavaScript"],
     link: "#"
   },
+  {
+    id: 4,
+    title: "Projeto Personalidade",
+    description: "Aplicação interativa para análise de personalidade baseada em IA, com previsão via modelo de machine learning, feedback personalizado e interface com streamlit",
+    image: "images/White and Black Modern New Post Announcement Instagram Story.png",
+    badge: "Desenvolvimento",
+    tags: ["Scikit-learn", "Bagging", "Streamlit", "CSS"],
+    link: "https://projetopersonalidad-xvye5zhedkgjqm5gdzayqf.streamlit.app/"
+  },
 ];
 
 function renderProjects() {
