@@ -44,21 +44,24 @@ function renderProjects() {
     const projectCard = document.createElement('article');
     projectCard.className = 'project-card';
     projectCard.innerHTML = `
-      <div class="project-image">
-        <img src="${project.image}" alt="${project.title}">
-        <div class="project-badge">${project.badge}</div>
+    <div class="project-image">
+      <img src="${project.image}" alt="${project.title}">
+      <div class="project-badge">${project.badge}</div>
+    </div>
+    <div class="project-content">
+      <h3>${project.title}</h3>
+      <p class="project-excerpt">${project.description}</p>
+      <div class="project-tech">
+        ${project.tags.map(tag => `<span class="tech-tag">${tag}</span>`).join('')}
       </div>
-      <div class="project-content">
-        <h3>${project.title}</h3>
-        <p class="project-excerpt">${project.description}</p>
-        <div class="project-tech">
-          ${project.tags.map(tag => `<span class="tech-tag">${tag}</span>`).join('')}
-        </div>
-      </div>
-      <div class="project-hover">
+    </div>
+    <div class="project-hover">
+      <a href="${project.link}" target="_blank" rel="noopener noreferrer">
         <button class="quick-view-btn">Visualizar</button>
-      </div>
-    `;
+      </a>
+    </div>
+  `;
+
     
     projectsGrid.appendChild(projectCard);
   });
