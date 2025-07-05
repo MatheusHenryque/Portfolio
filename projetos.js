@@ -35,6 +35,24 @@ const projects = [
     tags: ["Scikit-learn", "Bagging", "Streamlit", "CSS"],
     link: "https://projetopersonalidad-xvye5zhedkgjqm5gdzayqf.streamlit.app/"
   },
+  {
+    id: 5,
+    title: "Projeto Botz",
+    description: "Um chatbot inteligente desenvolvido com LlamaIndex e técnica de RAG para responder dúvidas técnicas sobre mainframes IBM Z17, incluindo arquitetura, z/OS, CICS, IMS, JCL e segurança.",
+    image: "images/capa_botz.png",
+    badge: "Desenvolvimento",
+    tags: ["llama_index", "Chatbot", "Groq", "RAG", "IA Generativa", "Streamlit"],
+    link: "https://projetobotz.streamlit.app/"
+  },
+  {
+    id: 6,
+    title: "EMC",
+    description: "Criação de um website único, totalmente customizado para atender às necessidades específicas de uma clínica de estética. Desenvolvido com HTML, CSS e JavaScript no frontend para uma interface elegante e responsiva, e Flask no backend para garantir funcionalidades dinâmicas e integração eficiente.",
+    image: "images/Teosofista 44 anos Solteira 1 filho de 24 anos Um cachorro resgatado 🐶 Três gatas adotadas Amante da Natureza Apaixonada por esportes Empreendedora Proprietária do EMC Apaixonada pela vida Apaixo.png",
+    badge: "Desenvolvimento",
+    tags: ["Flask", "HTML", "CSS", "JavaScript", "Heroku"],
+    link: "https://www.espacomulhercampesina.com.br/"
+  },
 ];
 
 function renderProjects() {
